@@ -119,7 +119,7 @@ This plugin relies on other plugins to provide a view that aggregates and provid
 The [MonitorPortlet](src/main/java/io/jenkins/plugins/monitoring/MonitorPortlet.java) class defines the base class 
 for each portlet that is to be displayed. In order to register the portlet for the plugin, 
 a factory class is required, which must be provided with the annotation `@Extension`. 
-The factory have to extend the [MonitorPortletFactory](src/main/java/io/jenkins/plugins/monitoring/MonitorPortletFactory.java) 
+The factory has to extend the [MonitorPortletFactory](src/main/java/io/jenkins/plugins/monitoring/MonitorPortletFactory.java) 
 abstract class, receives the current `Run<?,?>`, delivers a set of `MonitorPortlets` and defines a `displayedName`, 
 which appears as `optgroup` in the dashboard in the dropdown list of all available portlets and their corresponding 
 factory.
