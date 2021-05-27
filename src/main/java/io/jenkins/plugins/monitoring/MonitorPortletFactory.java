@@ -33,9 +33,7 @@ public abstract class MonitorPortletFactory implements ExtensionPoint {
      * @return
      *              a collection of {@link MonitorPortlet}.
      */
-    public Collection<MonitorPortlet> getPortlets(Run<?, ?> build) {
-        return Collections.emptyList();
-    }
+    public abstract Collection<MonitorPortlet> getPortlets(Run<?, ?> build);
 
     /**
      * Defines the name of the factory.
@@ -43,8 +41,6 @@ public abstract class MonitorPortletFactory implements ExtensionPoint {
      * @return
      *              the name to display for the factory.
      */
-    public String getDisplayName() {
-        return "Monitor Portlet Factory";
-    }
+    public abstract String getDisplayName();
 
 }

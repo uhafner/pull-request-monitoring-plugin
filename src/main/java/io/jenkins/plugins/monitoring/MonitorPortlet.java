@@ -21,9 +21,7 @@ public abstract class MonitorPortlet {
      * @return
      *          the title.
      */
-    public String getTitle() {
-        return "Monitor Portlet";
-    }
+    public abstract String getTitle();
 
     /**
      * Defines the id for the portlet.
@@ -31,9 +29,7 @@ public abstract class MonitorPortlet {
      * @return
      *          the id.
      */
-    public String getId() {
-        return this.getClass().getName();
-    }
+    public abstract String getId();
 
     /**
      * Defines the preferred width of the portlet.
@@ -41,9 +37,7 @@ public abstract class MonitorPortlet {
      * @return
      *          the width in pixels.
      */
-    public int getPreferredWidth() {
-        return 100;
-    }
+    public abstract int getPreferredWidth();
 
     /**
      * Defines the preferred height of the portlet.
@@ -51,9 +45,7 @@ public abstract class MonitorPortlet {
      * @return
      *          the height in pixels.
      */
-    public int getPreferredHeight() {
-        return 100;
-    }
+    public abstract int getPreferredHeight();
 
     /**
      * Defines the icon to show in the dropdown list of available portlets.
