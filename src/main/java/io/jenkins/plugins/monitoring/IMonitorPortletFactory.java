@@ -29,4 +29,5 @@ interface IMonitorPortletFactory {
      *              the name to display for the factory.
      */
     String getDisplayName();
+
 }
